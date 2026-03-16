@@ -20,7 +20,8 @@ spring:
 
 app:
   cors:
-    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:5173}
+    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:https://frontend-lno09akvb-samanhthanhs-projects.vercel.app}
+#    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:5173}
   jwt:
     secret: change-me-please-change-me-change-me
     expiration-ms: 86400000
