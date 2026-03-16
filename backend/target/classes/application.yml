@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shop?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: change-me-please-change-me-change-me
+    expiration-ms: 86400000
+  seed:
+    admin-email: admin@shop.local
+    admin-password: admin123
+  cloudinary:
+    cloud-name: dpvyfymoq
+    api-key: 926618257713912
+    api-secret: FeY8t-uNWf1ixdJkEhRBc1Ggq_k
+    folder: ${CLOUDINARY_FOLDER:uploads}
+
+logging:
+  level:
+    org.hibernate.SQL: debug
