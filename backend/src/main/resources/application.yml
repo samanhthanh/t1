@@ -3,6 +3,7 @@ server:
 
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test?sslMode=VERIFY_IDENTITY&enabledTLSProtocols=TLSv1.2,TLSv1.3
     username: 2RqVc3zsA5nr5Zk.root
     password: sDj0uM4dcN41shtB
